@@ -45,7 +45,6 @@ class RegistrationsTable
 
                 BadgeColumn::make('status')
                     ->colors([
-                        'secondary' => 'waiting_payment',
                         'warning'   => 'waiting_approval',
                         'success'   => 'approved',
                         'danger'    => 'rejected',
@@ -65,7 +64,6 @@ class RegistrationsTable
             ->filters([
                 Tables\Filters\SelectFilter::make('status')
                     ->options([
-                        'waiting_payment'  => 'Waiting Payment',
                         'waiting_approval' => 'Waiting Approval',
                         'approved'         => 'Approved',
                         'rejected'         => 'Rejected',
