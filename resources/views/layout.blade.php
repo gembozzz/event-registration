@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Platform</title>
+    <title>Mysifa - Event Platform</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +28,7 @@
 
         /* 🌿 Navbar hijau elegan */
         .navbar {
-            background-color: #198754 !important;
+            background-color: #04bef7 !important;
             /* hijau utama */
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
         }
@@ -50,7 +51,7 @@
         /* 🌿 Tombol */
         .btn-login {
             background-color: #fff;
-            color: #198754;
+            color: #04bef7;
             border: none;
             transition: all 0.2s;
         }
@@ -73,7 +74,7 @@
         }
 
         footer {
-            background: #198754;
+            background: #04bef7;
             color: #e9ecef;
             padding: 20px 0;
             margin-top: auto;

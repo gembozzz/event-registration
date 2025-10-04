@@ -5,7 +5,8 @@
         <div class="col-md-6">
             <div class="card shadow-lg border-0 rounded-4">
                 <div class="card-body p-4">
-                    <h3 class="text-center mb-4 fw-bold text-success">Daftar Akun Baru</h3>
+                    <img src="{{ asset('images/logo.png') }}" alt="" width="70" height="70" class="d-block mx-auto mb-3">
+                    <h3 class="text-center mb-4 fw-bold text-primary">Daftar Akun Baru</h3>
 
                     <form action="{{ route('register') }}" method="POST">
                         @csrf
@@ -26,7 +27,7 @@
                             <div class="input-group input-group-lg">
                                 <span class="input-group-text bg-light">+62</span>
                                 <input type="text" name="no_tlp" id="no_tlp" class="form-control"
-                                    placeholder="8123456789" required>
+                                    placeholder="8123..." required>
                             </div>
                         </div>
 
@@ -34,7 +35,7 @@
                             <label for="password" class="form-label fw-semibold">Password</label>
                             <div class="input-group input-group-lg">
                                 <input type="password" name="password" id="password" class="form-control"
-                                    placeholder="••••••••" required>
+                                    placeholder="" required>
                                 <button type="button" class="btn btn-outline-secondary"
                                     onclick="togglePassword('password', this)">👁</button>
                             </div>
@@ -44,20 +45,20 @@
                             <label for="password_confirmation" class="form-label fw-semibold">Konfirmasi Password</label>
                             <div class="input-group input-group-lg">
                                 <input type="password" name="password_confirmation" id="password_confirmation"
-                                    class="form-control" placeholder="••••••••" required>
+                                    class="form-control" placeholder="" required>
                                 <button type="button" class="btn btn-outline-secondary"
                                     onclick="togglePassword('password_confirmation', this)">👁</button>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-success btn-lg w-100 mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mt-3">
                             Daftar Sekarang
                         </button>
                     </form>
 
                     <div class="text-center mt-3">
                         <small>Sudah punya akun?
-                            <a href="{{ route('login') }}" class="text-decoration-none text-success fw-semibold">
+                            <a href="{{ route('login') }}" class="text-decoration-none text-primary fw-semibold">
                                 Login di sini
                             </a>
                         </small>

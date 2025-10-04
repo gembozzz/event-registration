@@ -6,7 +6,8 @@
             <div class="col-md-5 col-11">
                 <div class="card shadow-lg border-0 rounded-4">
                     <div class="card-body p-4">
-                        <h3 class="text-center mb-4 fw-bold text-success">Login</h3>
+                        <img src="{{ asset('images/logo.png') }}" alt="" width="70" height="70" class="d-block mx-auto mb-3">
+                        <h3 class="text-center mb-4 fw-bold text-primary">Login</h3>
 
                         <!-- Alert sukses -->
                         @if (session('success'))
@@ -38,20 +39,20 @@
                                 <div class="input-group">
                                     <input type="password" name="password" id="password"
                                         class="form-control form-control-lg" placeholder="Masukkan password" required>
-                                    <button type="button" class="btn btn-outline-success" id="togglePassword">
+                                    <button type="button" class="btn btn-outline-primary" id="togglePassword">
                                         👁️
                                     </button>
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-success w-100 btn-lg mt-3">
+                            <button type="submit" class="btn btn-primary w-100 btn-lg mt-3">
                                 Login
                             </button>
                         </form>
 
                         <div class="text-center mt-3">
                             <small>Belum punya akun?
-                                <a href="{{ route('register') }}" class="text-decoration-none text-success fw-semibold">
+                                <a href="{{ route('register') }}" class="text-decoration-none text-primary fw-semibold">
                                     Daftar Sekarang
                                 </a>
                             </small>
@@ -87,8 +88,8 @@
 
         /* Input focus effect */
         .form-control:focus {
-            border-color: #28a745;
-            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+            border-color: #04bef7;
+            box-shadow: 0 0 0 0.2rem rgba(4, 190, 247, 0.25);
         }
 
         /* Responsive tweaks */
