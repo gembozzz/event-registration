@@ -13,7 +13,7 @@
                     <h2 class="fw-bold text-success mb-3">{{ $event->title }}</h2>
 
                     <p class="text-muted mb-3">
-                        📅 <strong>{{ \Carbon\Carbon::parse($event->date)->format('d M Y, H:i') }}</strong>
+                        📅 <strong>{{ \Carbon\Carbon::parse($event->start_at)->format('d M Y, H:i') }} - {{ \Carbon\Carbon::parse($event->end_at)->format('d M Y, H:i') }}</strong>
                     </p>
 
                     <p class="text-secondary fs-6" style="white-space: pre-line;">
