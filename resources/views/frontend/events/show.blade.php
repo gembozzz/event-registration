@@ -82,9 +82,9 @@
                                     <div class="card-body">
                                         <h6 class="fw-bold text-success mb-2">💳 Informasi Pembayaran:</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li><strong>Bank:</strong> MANDIRI</li>
-                                            <li><strong>Nama:</strong> Ahmad Nurdiansyah</li>
-                                            <li><strong>No. Rekening:</strong> 1670001693877</li>
+                                            <li><strong>Bank:</strong> BCA</li>
+                                            <li><strong>Nama:</strong> eneng siti wulandari</li>
+                                            <li><strong>No. Rekening:</strong> 1391928130</li>
                                             <li class="text-muted small mt-2">Kirim sesuai nominal yang tertera di atas.</li>
                                         </ul>
                                     </div>
