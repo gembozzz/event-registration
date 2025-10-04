@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Events\Tables;
 
+use Dom\Text;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -29,6 +30,9 @@ class EventsTable
                 TextColumn::make('end_at')
                     ->dateTime()
                     ->sortable(),
+                TextColumn::make('whatsapp_admin')
+                    ->label('WhatsApp Admin ')
+                    ->searchable(),
                 TextColumn::make('location')
                     ->searchable(),
                 TextColumn::make('price')

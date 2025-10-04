@@ -27,6 +27,11 @@ class EventForm
                     ->numeric()
                     ->default(0.0)
                     ->prefix('$'),
+                TextInput::make('whatsapp_admin')
+                    ->label('WhatsApp Admin ')
+                    ->required()
+                    ->tel()
+                    ->placeholder('Contoh: +6281234567890'),
                 TextInput::make('quota')
                     ->numeric(),
                 TextInput::make('link'),
