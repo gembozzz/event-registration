@@ -1,0 +1,48 @@
+<?php
+
+namespace App\Filament\Resources\Events\Schemas;
+
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Components\FileUpload;
+use Filament\Schemas\Schema;
+
+class EventForm
+{
+    public static function configure(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                TextInput::make('title')
+                    ->required(),
+                Textarea::make('description')
+                    ->columnSpanFull(),
+                DateTimePicker::make('start_at'),
+                DateTimePicker::make('end_at'),
+                TextInput::make('location'),
+                TextInput::make('price')
+                    ->required()
+                    ->numeric()
+                    ->default(0.0)
+                    ->prefix('$'),
+                TextInput::make('quota')
+                    ->numeric(),
+                TextInput::make('link'),
+                Toggle::make('is_active')
+                    ->required(),
+                FileUpload::make('banner')
+                    ->label('Banner')
+                    ->image()                      // hanya gambar
+                    ->disk('public')               // simpan di disk 'public'
+                    ->directory('banners')
+                    ->imagePreviewHeight('200')
+                    ->downloadable()
+                    ->openable()
+                    ->maxSize(2048)
+                    ->deletable(true)        // 2 MB max
+                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp', 'image/jpg']),
+            ]);
+    }
+}
