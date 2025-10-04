@@ -44,7 +44,7 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="fw-bold text-dark">{{ $event->title }}</h5>
                                 <p class="text-muted mb-2 small">
-                                    📆 {{ \Carbon\Carbon::parse($event->date)->format('d M Y, H:i') }}
+                                    📆 {{ \Carbon\Carbon::parse($event->start_at)->format('d M Y, H:i') }} - {{ \Carbon\Carbon::parse($event->end_at)->format('d M Y, H:i') }}
                                 </p>
                                 <p class="text-secondary flex-grow-1">{{ Str::limit($event->description, 90) }}</p>
 
