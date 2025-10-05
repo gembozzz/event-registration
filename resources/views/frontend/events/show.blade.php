@@ -17,7 +17,7 @@
                     </p>
 
                     <p class="text-secondary fs-6" style="white-space: pre-line;">
-                        {{ $event->description }}
+                        {!! $event->description !!}
                     </p>
 
                     @if ($event->price)

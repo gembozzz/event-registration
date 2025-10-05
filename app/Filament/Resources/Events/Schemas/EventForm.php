@@ -7,6 +7,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Filament\Schemas\Schema;
 
 class EventForm
@@ -17,8 +18,9 @@ class EventForm
             ->components([
                 TextInput::make('title')
                     ->required(),
-                Textarea::make('description')
-                    ->columnSpanFull(),
+                RichEditor::make('description')
+                    ->label('Deskripsi')
+                    ->toolbarButtons(['bold', 'italic', 'underline', 'strike', 'link', 'bulletList', 'orderedList', 'blockquote', 'codeBlock', 'redo', 'undo']),
                 DateTimePicker::make('start_at'),
                 DateTimePicker::make('end_at'),
                 TextInput::make('location'),
@@ -26,7 +28,7 @@ class EventForm
                     ->required()
                     ->numeric()
                     ->default(0.0)
-                    ->prefix('$'),
+                    ->prefix('Rp '),
                 TextInput::make('whatsapp_admin')
                     ->label('WhatsApp Admin ')
                     ->required()
