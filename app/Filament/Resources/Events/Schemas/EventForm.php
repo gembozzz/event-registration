@@ -37,6 +37,9 @@ class EventForm
                 TextInput::make('quota')
                     ->numeric(),
                 TextInput::make('link'),
+                TextInput::make('link_whatsapp'),
+                TextInput::make('link_video'),
+                TextInput::make('link_document'),
                 Toggle::make('is_active')
                     ->required(),
                 FileUpload::make('banner')

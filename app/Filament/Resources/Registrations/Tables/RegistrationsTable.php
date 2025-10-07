@@ -55,11 +55,6 @@ class RegistrationsTable
                     ->label('Registered At')
                     ->dateTime()
                     ->sortable(),
-
-                // TextColumn::make('actions')
-                //     ->label('Action') // ini akan jadi header kolom
-                //     ->sortable(false)
-                //     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('status')

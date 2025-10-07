@@ -22,6 +22,9 @@ return new class extends Migration
             $table->decimal('price', 14, 2)->default(0);
             $table->integer('quota')->nullable();
             $table->string('link')->nullable();
+            $table->string('link_whatsapp')->nullable();
+            $table->string('link_video')->nullable();
+            $table->string('link_document')->nullable();
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
