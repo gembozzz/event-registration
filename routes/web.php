@@ -9,7 +9,7 @@ use App\Http\Controllers\RegistrationController;
 Route::get('/', [EventController::class, 'index'])->name('home');
 Route::get('/events/{event}', [EventController::class, 'show'])->middleware('auth')->name('events.show');
 Route::post('/events/{event}/register', [RegistrationController::class, 'store'])->middleware('auth')->name('events.register');
-Route::match(['get', 'post'], '/midtrans-callback', [RegistrationController::class, 'callback']);
+
 
 
 
